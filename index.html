@@ -4,24 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chama-Burguer</title>
-
-    <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-
-        h1 {
-            color: #007BFF;
-        }
-    </style>
+    <title>Chama Burguer</title>
 </head>
 
 <body>
-    <h1>Projeto Chama Burguer</h1>
-    <p>Iniciando nosso controle de versão</p>
+    <header class="site-headre">
+
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                🔥CHAMA BURGUER
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="#cardapio">Cardápio</a>
+                </li>
+
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#depoimentos">Depoimentos</a>
+                </li>
+
+                <li>
+                    <a href="#reserva">Reserva</a>
+                </li>
+
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+
+            <a href="#pedir" class="btn btn-nav">Peça agora</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">≣</button> 
+            //o aria-label é uma leitura de tela, colocar apenas nos botões, não há necessidade de colocar em links
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h1>Burguer de verdade,<br>
+                    na brasa</h1>
+
+                    <p>
+                        Pão brioche, carne 160g grelhada na hora e ingredientes fresquinhos - sem atalho, sem enrolação.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
