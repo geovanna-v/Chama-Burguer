@@ -40,8 +40,8 @@
 
             <a href="#pedir" class="btn btn-nav">Peça agora</a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">≣</button> 
-            //o aria-label é uma leitura de tela, colocar apenas nos botões, não há necessidade de colocar em links
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">≣</button>
+            <!--o aria-label é uma leitura de tela, colocar apenas nos botões, não há necessidade de colocar em links-->
 
         </nav>
 
@@ -52,13 +52,159 @@
             <div class="hero-inner">
                 <div class="hero-text">
                     <h1>Burguer de verdade,<br>
-                    na brasa</h1>
+                        na brasa</h1>
 
                     <p>
                         Pão brioche, carne 160g grelhada na hora e ingredientes fresquinhos - sem atalho, sem enrolação.
                     </p>
+
+                    <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+                    <!--link ao invés de botão para NAVEGAÇÃO da página, não para "linkar" a algo-->
                 </div>
+
+                <div class="hero-image">
+                    <img src="assets/icons/burger-classico.svg" alt="Ilustração de um hambúguer clássico">
+                </div>
+
             </div>
+        </section>
+
+        <section class="menu" id="cardapio">
+            <h2>Nosso cardápio</h2>
+            <div class="menu-cards">
+                <article class="menu-card">
+                    <div class="menu-icon">
+                        <img src="assets/icons/burger-classico.svg" alt="Ilustração de um hambúguer clássico">
+                        <h3>Clássicos</h3>
+                        <p>Pão briochee, carne 160g, queijo, alface e tomate.</p>
+                        <span class="price">R$24,90</span>
+                        <button class="add-to-card" data-name="Clássicos" data-price="24.90">Adicionar o pedido</button>
+                        <!--o data é para armazenar uma informação no html, para futuramente ser utilizado no js-->
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <span class="badge">Mais pedido</span>
+                    <div class="menu-icon">
+                        <img src="assets/icons/burger-bacon.svg" alt="Ilustração de um hambúguer Bacon">
+                        <h3>Bacon</h3>
+                        <p>Tudo do clássico + fatias generosas de bacon.</p>
+                        <span class="price">R$28,90</span>
+                        <button class="add-to-card" data-name="Bacon" data-price="28.90">Adicionar o pedido</button>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-icon">
+                        <img src="assets/icons/burger-veggie.svg" alt="Ilustração de um hambúguer Vegetariano">
+                        <h3>Veggie</h3>
+                        <p>Hambúger de grão-de-bico, queijo, alface e cebola roxa.</p>
+                        <span class="price">R$26,90</span>
+                        <button class="add-to-card" data-name="Veggie" data-price="26.90">Adicionar o pedido</button>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-icon menu-icon-combo">
+                        <img src="assets/icons/fritas.svg" alt="Ilustração de porção de Fritas">
+                        <img src="assets/icons/bebida.svg" alt="Ilustração de uma Bebida">
+                        <h3>Combo Fritas + Refri</h3>
+                        <p>Fritas crocantes e um refrigerante gelado para completar.</p>
+                        <span class="price">R$12,90</span>
+                        <button class="add-to-card" data-name="Combo Fritas + Refri" data-price="12.90">Adicionar o
+                            pedido</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="about-image">
+                <img src="assets/images/sobre-burger.jpg" alt="Cozinha do Chama Burguer" width="800" height="500">
+                <!--o tamanho e altura definido aqui é para o "formato" da imagem-->
+            </div>
+
+            <div class="about-text">
+                <span class="section-label">Nossa história</span>
+                <h2>Comida de boteco, com capricho de restaurante</h2>
+                <p>
+                    O Chama Burger começou numa churrasqueira de quintal, testando receitas com os
+                    amigos. Hoje, o método continua o mesmo: carne grelhada na brasa, pão fresco
+                    do dia e ingredientes comprados na feira — só que agora pra atender o bairro
+                    inteiro.
+                </p>
+
+                <a href="#cardapio" class="link-arrow">ver cardápio completo</a>
+            </div>
+        </section>
+
+        <section class="testiomonials" id="depoimentos">
+            <h2>Quem prova, volta</h2>
+            <div class="testiomonials-cards">
+                <article class="testiomonial">
+                    <img src="assets/images/avatar-pc.png" alt="Foto de Pedro Costa" class="avatar">
+                    <p class="quote"> <!--quote : citar-->
+                        "Melhor bacon burger da região, sem exagero. O ponto da carne é sempre perfeito."
+                    </p>
+
+                    <p class="author">
+                        Pedro Costa
+                        <span>
+                            - cliente frequnete
+                        </span>
+                    </p>
+                </article>
+
+                <article class="testimonial">
+                    <img src="assets/images/avatar-mr.png" alt="Foto de Marina Rocha" class="avatar">
+                    <p class="quote">"O veggie surpreende até quem come carne. Peço toda semana com a galera do
+                        trabalho."</p>
+                    <p class="author">Marina Rocha <span>— cliente frequente</span></p>
+                </article>
+                <article class="testimonial">
+                    <img src="assets/images/avatar-tl.png" alt="Foto de Thiago Lima" class="avatar">
+                    <p class="quote">"Pedi pro aniversário de 20 pessoas e todo mundo elogiou. Entrega rápida também."
+                    </p>
+                    <p class="author">Thiago Lima <span>— cliente de evento</span></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="reservation" id="reserva">
+            <h2>Reserve sua mesa</h2>
+            <p>Prefere comer no salão? Deixe seus dados que confirmamos por telefone.</p>
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-row">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="ipt_nome" placeholder="Seu nome" required> <!--required : campo obrigatório-->
+                </div>
+
+                <div class="form-row">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="ipt_telefone" placeholder="(11) 99999-9999" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="ipt_data" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="ipt_data" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="pessoas">Número de pessoas</label>
+                    <select name="select_pessoas" id="pessoas">
+                        <option value="1">1 pessoa</option>
+                        <option value="2">2 pessoas</option>
+                        <option value="3">3 pessoas</option>
+                        <option value="4">4 pessoas</option>
+                        <option value="5">5 ou mais pessoas</option>
+                    </select>
+                </div>
+            </form>
         </section>
     </main>
 </body>
