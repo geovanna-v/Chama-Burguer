@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Chama Burguer</title>
 </head>
 
 <body>
-    <header class="site-headre">
+    <header class="site-header">
 
         <nav class="navbar">
 
@@ -176,7 +182,8 @@
             <form class="reservation-form" id="reservationForm">
                 <div class="form-row">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="ipt_nome" placeholder="Seu nome" required> <!--required : campo obrigatório-->
+                    <input type="text" id="nome" name="ipt_nome" placeholder="Seu nome" required>
+                    <!--required : campo obrigatório-->
                 </div>
 
                 <div class="form-row">
@@ -204,9 +211,64 @@
                         <option value="5">5 ou mais pessoas</option>
                     </select>
                 </div>
+                <!--finalizado com o professor-->
+
+                <!--faltei e foi feita com outra professora-->]
+
+                <div class="form-row form-row full">
+                    <label for="mensagem">Observações(opcional)</label>
+                    <textarea name="mensagem" id="mensagem" rows="3"
+                        placeholder="Alguma preferência alimentar"></textarea>
+                </div>
+
+                <div class="form-row form-row-full">
+                    <label for="foto">Foto de referência(opcional)</label>
+                    <input type="file" id="foto" name="foto" accept="image/*">
+                    <img id="fotoPreview" class="foto-preview" alt="Prévia da imagem selecionada" hidden>
+                </div>
+                <button type="submit" class="btn-primary form-submit">Confirmar reserva</button>
             </form>
+
+            <div class="reservation-confirmation" id="reservationConfirmation"></div>
+
         </section>
+
+        </section>
+
+        <section class="cta" id="pedir">
+            <h2>Bateu Fome?</h2>
+            <p>Peça pelo delivey ou venha comer no salão - abrimos todos os dias, das 18h a meia-noite</p>
+            <a href="#" class="btn btn-accent"> Peça pelo Whatsapp</a>
+
+        </section>
+
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-hours">
+            Todos os dias, das 18h a meia meia-noite
+        </div>
+
+        <ul class="footer-links">
+            <li><a href="#" arial-label="Instagram"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+            </li>
+            <li><a href="#" arial-label="Facebook"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a></li>
+            <li><a href="#" arial-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a></li>
+            <li><a href="#" arial-label="TikTok"><i class="fa-brands fa-tiktok"></i><span>TikTok</span></a></li>
+            <li><a href="#" arial-label="Ver no mapa"><i class="fa-solid fa-location-dot"></i><span>Ver no
+                        mapa</span></a></li>
+        </ul>
+
+
+    </footer>
+
+    <div class="cart-summary" id="cardSummary">
+        <span class="card-icon">🛒 </span>
+        <span id="cartCount">0 </span> Itens - <span id="cartTotal"> R$ 0,00</span>
+    </div>
+
+    <!--Fim da professora-->
+
 </body>
 
 </html>
